@@ -1,0 +1,11 @@
+data format as in lstm_data text file
+each row is a time series
+the format of the data is as follows
+
+[[[[1,2,3],[0.2,0.8]],[[3,2,1],[0.9,0.1]],[[2,3.1,4.5],[0.4,0.6]]]
+[[[1.1,2.2,3],[0.1,0.9]],[[13,12,13],[0.8,0.2]],[[1,3.1,4.5],[0.5,0.5]]]
+[[[91,12,33],[0.4,0.6]],[[322,21,12],[0.9,0.1]],[[12,83.1,44.5],[0.2,0.8]]]]
+
+call this by 
+./lstm $data_file #number_xy_pairs, x_dim, y_dim
+./lstm data 3 3 2
